@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <div class = "row">
+<div class = "hour">9am</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+<!-- when entering 3 divs you need  use text area element -->
+        
+      </div>
+      <div class = "row">
+        <div class = "hour">10am</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">11am</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">12pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">1pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">2pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">3pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">4pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">5pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+      <div class = "row">
+        <div class = "hour">6pm</div><textarea>New text</textarea><div class = "saveBtn"><h3>SAVE</h3></div>
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+</html>
+
+<!--calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.-->
+<!-- uses moment.js, can use alternate solutions  https://momentjs.com/docs/#/-project-status/-->
+<!--  Acceptance criteria
+
+  GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with time blocks for standard business hours
+WHEN I view the time blocks for that day
+THEN each time block is color-coded to indicate whether it is in the past, present, or future
+WHEN I click into a time block
+THEN I can enter an event
+WHEN I click the save button for that time block
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events persist
+
+ -->
+<!-- 
+Instructor notes:
+
+Assignment: daily planner
+Daily schd
+Starter is  bootstrap
+Use bootstrap or flex box, css grid
+Text is stored in local storage
+Hint: starter code has css, what to add to rows, past, present all diff colours
+Before is grey
+Current is red    
+Coming is green
+Everything is saved in local storage immediately
+Readme mentions moment , you can use other too, moment.js is inactive, links in
+readme can give alternatives,
+Requires jQuery, updated document based on jQuery
+index should be on root directory
+Save icon from font awesome, save on right side
+
+ -->
+<!-- 
+psuedocode:
+-todays date by alternate moment.js on top left
+-insert flexbox 3 divs in 9 rows(check bootsrtap mod for clues to add)
+-add times left div, icons on right to save
+-middle box make clickable writable and savable 
+-right box icon click event listener to save in JSON local st 
+-alternate moment.js will change the box colours according to times 
+-can use jQuery to save and update, after saved it refreshed does not change the changes, and boostrap along wtih alternate moment.js to change colours wil moment.js
+-->
+
+
+
+
