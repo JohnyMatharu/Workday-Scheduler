@@ -1,4 +1,31 @@
-console.log("DateTime.now()");
+var DateTime = luxon.DateTime;
+
+//use this for top of the page
+console.log(DateTime.now().toFormat("MM/dd/yyyy"));
+
+//use this for change of colors if statement
+var hour = (DateTime.now().toFormat("h a"));
+
+var nineAM = "9 am";
+var tenAM = "10 am";
+var elevenAM = "11 am";
+var twelvePM = "12 pm";
+var onePM = "1 pm";
+var twoPM = "2 pm";
+var threePM = "3 pm";
+var fourPM = "4 pm";
+var fivePM = "5 pm";
+var sixPM = "6 pm";
+
+if (hour === fivePM);
+{
+    $("#fivePM").addClass("bg-danger").removeClass("bg-success");
+}
+//add new lines for all hours same way, add grey for past multiple lines
+
+
+
+
 
 //Jquery only used for updated version
 
