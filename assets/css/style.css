@@ -73,9 +73,15 @@ width: 18%;
   background-color: #06AED5;
   color: white;
   width: 18%;
+  align-content: center;
+justify-content: center;
 }
 /* hovering on save sign icon */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+#align
+{
+  align-content: center;
 }
