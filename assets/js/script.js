@@ -5,48 +5,50 @@ console.log(DateTime.now().toFormat("MM/dd/yyyy"));
 
 //use this for change of colors if statement
 var hour = (DateTime.now().toFormat("h a"));
-
-var nineAM = "9 am";
-var tenAM = "10 am";
-var elevenAM = "11 am";
-var twelvePM = "12 pm";
-var onePM = "1 pm";
-var twoPM = "2 pm";
-var threePM = "3 pm";
-var fourPM = "4 pm";
-var fivePM = "5 pm";
-var sixPM = "11 pm";//test
+console.log(hour);
+var nineAM = "9 AM";
+var tenAM = "10 AM";
+var elevenAM = "11 AM";
+var twelvePM = "12 PM";
+var onePM = "1 PM";
+var twoPM = "2 PM";
+var threePM = "3 PM";
+var fourPM = "4 PM";
+var fivePM = "5 PM";
+var sixPM = "6 PM";
 
 switch (hour){
-case 0: (hour === tenAM);
+  case tenAM:
   $("#tenAM").addClass("bg-danger").removeClass("bg-success");
 break;
 //add new lines for all hours same way, add grey for past multiple lines
-case 1: (hour === elevenAM);
+case elevenAM:
     $("#elevenAM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 2: (hour === twelvePM);
+case twelvePM:
     $("#twelvePM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 3: (hour === onePM);
+case onePM:
     $("#onePM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 4: (hour === twoPM);
+case twoPM:
     $("#twoPM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 5: (hour === threePM);
+case threePM:
     $("#threePM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 6: (hour === fourPM);
+case fourPM:
     $("#fourPM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 7: (hour === fivePM);
+case fivePM:
     $("#fivePM").addClass("bg-danger").removeClass("bg-success");
 break;
-case 8: (hour === sixPM);
+case sixPM:
     $("#sixPM").addClass("bg-danger").removeClass("bg-success");
 break;
 }
+
+//can add a for statement and add array for ...PM or ...AM 
 
 
 
