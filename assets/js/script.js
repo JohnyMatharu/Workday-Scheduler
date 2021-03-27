@@ -15,15 +15,38 @@ var twoPM = "2 pm";
 var threePM = "3 pm";
 var fourPM = "4 pm";
 var fivePM = "5 pm";
-var sixPM = "6 pm";
+var sixPM = "11 pm";//test
 
-if (hour === fivePM);
-{
-    $("#fivePM").addClass("bg-danger").removeClass("bg-success");
-}
+switch (hour){
+case 0: (hour === tenAM);
+  $("#tenAM").addClass("bg-danger").removeClass("bg-success");
+break;
 //add new lines for all hours same way, add grey for past multiple lines
-
-
+case 1: (hour === elevenAM);
+    $("#elevenAM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 2: (hour === twelvePM);
+    $("#twelvePM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 3: (hour === onePM);
+    $("#onePM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 4: (hour === twoPM);
+    $("#twoPM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 5: (hour === threePM);
+    $("#threePM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 6: (hour === fourPM);
+    $("#fourPM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 7: (hour === fivePM);
+    $("#fivePM").addClass("bg-danger").removeClass("bg-success");
+break;
+case 8: (hour === sixPM);
+    $("#sixPM").addClass("bg-danger").removeClass("bg-success");
+break;
+}
 
 
 
