@@ -97,13 +97,20 @@ break;
 }
 
 
-document.getElementById("#btnnineAM").addEventListener("click", saveText); 
+document.getElementById("btnnineAM").addEventListener("click", saveText); 
 
 function saveText()
 {
 var txtNineAM = document.getElementById('nineAM').value;
 console.log(txtNineAM);
+localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+//PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+var displayText = JSON.parse(localStorage.getItem("nineAMstorage")) || [];
+console.log(displayText);
+document.getElementById("nineAM").innerHTML=displayText;
+console.log(displayText);
 }
+
 
 
 
