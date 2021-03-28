@@ -18,35 +18,84 @@ var fivePM = "5 PM";
 var sixPM = "6 PM";
 
 switch (hour){
-  case tenAM:
-  $("#tenAM").addClass("bg-danger").removeClass("bg-success");
+case nineAM:
+   $("#nineAM").addClass("bg-danger").removeClass("bg-success");
+break;
+case tenAM:
+   $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+   $("#tenAM").addClass("bg-danger").removeClass("bg-success");
 break;
 //add new lines for all hours same way, add grey for past multiple lines
 case elevenAM:
+    $("#nineAM").addClass("bg-secondary").removeClass("bg-success");    
+    $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
     $("#elevenAM").addClass("bg-danger").removeClass("bg-success");
 break;
 case twelvePM:
+    $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
     $("#twelvePM").addClass("bg-danger").removeClass("bg-success");
 break;
 case onePM:
+    $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#twelvePM").addClass("bg-secondary").removeClass("bg-success");
     $("#onePM").addClass("bg-danger").removeClass("bg-success");
 break;
 case twoPM:
+    $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#twelvePM").addClass("bg-secondary").removeClass("bg-success");
+    $("#onePM").addClass("bg-secondary").removeClass("bg-success");
     $("#twoPM").addClass("bg-danger").removeClass("bg-success");
 break;
 case threePM:
+      $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#twelvePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#onePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#twoPM").addClass("bg-secondary").removeClass("bg-success");
     $("#threePM").addClass("bg-danger").removeClass("bg-success");
 break;
 case fourPM:
+      $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#twelvePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#onePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#twoPM").addClass("bg-secondary").removeClass("bg-success");
+      $("#threePM").addClass("bg-secondary").removeClass("bg-success");
     $("#fourPM").addClass("bg-danger").removeClass("bg-success");
 break;
 case fivePM:
+      $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
+      $("#twelvePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#onePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#twoPM").addClass("bg-secondary").removeClass("bg-success");
+      $("#threePM").addClass("bg-secondary").removeClass("bg-success");
+      $("#fourPM").addClass("bg-secondary").removeClass("bg-success");
     $("#fivePM").addClass("bg-danger").removeClass("bg-success");
 break;
 case sixPM:
+    $("#nineAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#tenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#elevenAM").addClass("bg-secondary").removeClass("bg-success");
+    $("#twelvePM").addClass("bg-secondary").removeClass("bg-success");
+    $("#onePM").addClass("bg-secondary").removeClass("bg-success");
+    $("#twoPM").addClass("bg-secondary").removeClass("bg-success");
+    $("#threePM").addClass("bg-secondary").removeClass("bg-success");
+    $("#fourPM").addClass("bg-secondary").removeClass("bg-success");
+    $("#fivePM").addClass("bg-secondary").removeClass("bg-success");
     $("#sixPM").addClass("bg-danger").removeClass("bg-success");
 break;
 }
+
 
 //can add a for statement and add array for ...PM or ...AM 
 
