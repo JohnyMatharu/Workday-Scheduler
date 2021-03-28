@@ -32,7 +32,11 @@ console.log(displayTextTen);
 var DateTime = luxon.DateTime;
 
 //use this for top of the page
-console.log(DateTime.now().toFormat("MM/dd/yyyy"));
+var day = (DateTime.now().toLocaleString({ weekday: 'long' }));
+document.getElementById("dayDisplay").innerHTML=day;
+
+var date = (DateTime.now().toFormat("MM/dd/yyyy"));
+document.getElementById("dateDisplay").innerHTML=date;
 
 //use this for change of colors if statement
 var hour = (DateTime.now().toFormat("h a"));

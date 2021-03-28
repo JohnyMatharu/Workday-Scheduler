@@ -27,6 +27,8 @@
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <div id = "dayDisplay"><h2>HERE IS DAY</h2></div>
+    <div id = "dateDisplay"><h2>HERE IS DATE</h2></div>
     </header>
     <div class="container">
       <div class = "row">
@@ -70,65 +72,5 @@
   </body>
 </html>
 
-<!--calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.-->
-<!-- uses moment.js, can use alternate solutions  https://momentjs.com/docs/#/-project-status/-->
-<!--  Acceptance criteria
-
-  GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-
- -->
-<!-- 
-Instructor notes:
-
-Assignment: daily planner
-Daily schd
-Starter is  bootstrap
-Use bootstrap or flex box, css grid
-Text is stored in local storage
-Hint: starter code has css, what to add to rows, past, present all diff colours
-Before is grey
-Current is red    
-Coming is green
-Everything is saved in local storage immediately
-Readme mentions moment , you can use other too, moment.js is inactive, links in
-readme can give alternatives,
-Requires jQuery, updated document based on jQuery
-index should be on root directory
-Save icon from font awesome, save on right side
-
- -->
-<!-- 
-psuedocode:
--todays date by alternate moment.js on top left
--insert flexbox 3 divs in 9 rows(check bootsrtap mod for clues to add)
--add times left div, icons on right to save
--middle box make clickable writable and savable 
--right box icon click event listener to save in JSON local st 
--alternate moment.js will change the box colours according to times 
--can use jQuery to save and update, after saved it refreshed does not change the changes, and boostrap along wtih alternate moment.js to change colours wil moment.js
--->
-
-<!--
-Tutor: March 25th 2021
-For moment.js link js cdn,
-For colour change can use if statement to condition time and action as changing
-colour, add jQuery to link better DOM
-JSOn uses a key to store the load of objects, load the object before start using
-key, jQuery is fine to store, may use prevent default-attach to event listener, all
-event listeners can be connected to for loop
-https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollectionelements
-JQuery is connected to js DOM structure-->
 
 
