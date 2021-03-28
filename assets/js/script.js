@@ -97,6 +97,17 @@ break;
 }
 
 
+("#btn9AM").addEventListener('click',saveText);
+
+function saveText(Event){
+var txtNineAM = document.getElementById('nineAM').value;
+
+console.log(txtNineAM.value);}
+
+
+
+
+
 //can add a for statement and add array for ...PM or ...AM 
 
 
