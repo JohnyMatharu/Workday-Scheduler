@@ -1,3 +1,34 @@
+var displayTextOne = JSON.parse(localStorage.getItem("nineAMstorage")) || [];
+document.getElementById("nineAM").innerHTML=displayTextOne;
+console.log(displayTextOne);
+var displayTextTwo = JSON.parse(localStorage.getItem("tenAMstorage")) || [];
+document.getElementById("tenAM").innerHTML=displayTextTwo;
+console.log(displayTextTwo);
+var displayTextThree = JSON.parse(localStorage.getItem("elevenAMstorage")) || [];
+document.getElementById("elevenAM").innerHTML=displayTextThree;
+console.log(displayTextThree);
+var displayTextFour = JSON.parse(localStorage.getItem("twelvePMstorage")) || [];
+document.getElementById("twelvePM").innerHTML=displayTextFour;
+console.log(displayTextFour);
+var displayTextFive = JSON.parse(localStorage.getItem("onePMstorage")) || [];
+document.getElementById("onePM").innerHTML=displayTextFive;
+console.log(displayTextFive);
+var displayTextSix = JSON.parse(localStorage.getItem("twoPMstorage")) || [];
+document.getElementById("twoPM").innerHTML=displayTextSix;
+console.log(displayTextSix);
+var displayTextSeven = JSON.parse(localStorage.getItem("threePMstorage")) || [];
+document.getElementById("threePM").innerHTML=displayTextSeven;
+console.log(displayTextSeven);
+var displayTextEight = JSON.parse(localStorage.getItem("fourPMstorage")) || [];
+document.getElementById("fourPM").innerHTML=displayTextEight;
+console.log(displayTextEight);
+var displayTextNine = JSON.parse(localStorage.getItem("fivePMstorage")) || [];
+document.getElementById("fivePM").innerHTML=displayTextNine;
+console.log(displayTextNine);
+var displayTextTen = JSON.parse(localStorage.getItem("sixPMstorage")) || [];
+document.getElementById("sixPM").innerHTML=displayTextTen;
+console.log(displayTextTen);
+
 var DateTime = luxon.DateTime;
 
 //use this for top of the page
@@ -97,20 +128,105 @@ break;
 }
 
 
-document.getElementById("btnnineAM").addEventListener("click", saveText); 
+document.getElementById("btnNineAM").addEventListener("click", saveTextNineAM); 
+document.getElementById("btnTenAM").addEventListener("click", saveTextTenAM);
+document.getElementById("btnElevenAM").addEventListener("click", saveTextElevenAM);
+document.getElementById("btnTwelvePM").addEventListener("click", saveTextTwelvePM);
+document.getElementById("btnOnePM").addEventListener("click", saveTextOnePM);
+document.getElementById("btnTwoPM").addEventListener("click", saveTextTwoPM);
+document.getElementById("btnThreePM").addEventListener("click", saveTextThreePM);
+document.getElementById("btnFourPM").addEventListener("click", saveTextFourPM);
+document.getElementById("btnFivePM").addEventListener("click", saveTextFivePM);
+document.getElementById("btnSixPM").addEventListener("click", saveTextSixPM);
 
-function saveText()
+function saveTextNineAM()
 {
 var txtNineAM = document.getElementById('nineAM').value;
 console.log(txtNineAM);
 localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
 //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
 var displayText = JSON.parse(localStorage.getItem("nineAMstorage")) || [];
-console.log(displayText);
-document.getElementById("nineAM").innerHTML=displayText;
-console.log(displayText);
 }
 
+function saveTextTenAM()
+{
+  var txtTenAM = document.getElementById('tenAM').value;
+  console.log(txtTenAM);
+  localStorage.setItem("tenAMstorage",JSON.stringify(txtTenAM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("tenAMstorage")) || [];
+  }
+
+function saveTextElevenAM()
+{
+  var txtElevenAM = document.getElementById('elevenAM').value;
+  console.log(txtElevenAM);
+  localStorage.setItem("elevenAMstorage",JSON.stringify(txtElevenAM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("elevenAMstorage")) || [];
+  }
+
+function saveTextTwelvePM()
+{
+  var txtTwelvePM = document.getElementById('twelvePM').value;
+  console.log(txtTwelvePM);
+  localStorage.setItem("twelvePMstorage",JSON.stringify(txtTwelvePM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("twelvePMstorage")) || [];
+  }
+
+function saveTextOnePM()
+{
+  var txtOnePM = document.getElementById('onePM').value;
+  console.log(txtOnePM);
+  localStorage.setItem("onePMstorage",JSON.stringify(txtOnePM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("onePMstorage")) || [];
+  }
+
+function saveTextTwoPM()
+{
+  var txtTwoPM = document.getElementById('twoPM').value;
+  console.log(txtTwoPM);
+  localStorage.setItem("twoPMstorage",JSON.stringify(txtTwoPM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("twoPMstorage")) || [];
+  }
+
+function saveTextThreePM()
+{
+  var txtThreePM = document.getElementById('threePM').value;
+  console.log(txtThreePM);
+  localStorage.setItem("threePMstorage",JSON.stringify(txtThreePM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("threePMstorage")) || [];
+  }
+
+function saveTextFourPM()
+{
+  var txtFourPM = document.getElementById('fourPM').value;
+  console.log(txtFourPM);
+  localStorage.setItem("fourPMstorage",JSON.stringify(txtFourPM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("fourPMstorage")) || [];
+  }
+
+function saveTextFivePM()
+{
+  var txtFivePM = document.getElementById('fivePM').value;
+  console.log(txtFivePM);
+  localStorage.setItem("fivePMstorage",JSON.stringify(txtFivePM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("fivePMstorage")) || [];
+  }
+function saveTextSixPM()
+{
+  var txtSixPM = document.getElementById('sixPM').value;
+  console.log(txtSixPM);
+  localStorage.setItem("sixPMstorage",JSON.stringify(txtSixPM));
+  //PARSE: localStorage.setItem("nineAMstorage",JSON.stringify(txtNineAM));
+  var displayText = JSON.parse(localStorage.getItem("sixPMstorage")) || [];
+  }
 
 
 
