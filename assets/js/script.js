@@ -97,12 +97,13 @@ break;
 }
 
 
-("#btn9AM").addEventListener('click',saveText);
+document.getElementById("#btnnineAM").addEventListener("click", saveText); 
 
-function saveText(Event){
+function saveText()
+{
 var txtNineAM = document.getElementById('nineAM').value;
-
-console.log(txtNineAM.value);}
+console.log(txtNineAM);
+}
 
 
 
