@@ -6,7 +6,7 @@ Everyday work is organized on calendars, but it does not focus on what is curren
 
 This assignment is about scheduling work and staying organized. User will choose the time slot, add the task and press save button and the task will be saved on that time slot. Past, present and future is shown by different colors 
 
-Tools used are JQuery, Boostrap, HTMl, and Javascript
+Tools used are JQuery, Boostrap, HTMl, CSS, and Javascript
 
 # Links
 For Web Application
